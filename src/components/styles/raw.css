@@ -1,0 +1,636 @@
+@import "./utility.css";
+
+:root {
+  --primary: #3dcfd3;
+  --dark: #161616;
+  --pure: #ffffff;
+  --secondary: #898989;
+  --lite: #f2f2f2;
+  --pureDark: #070606;
+  --liter:#c4bebe ;
+}
+.home-hero.hero {
+  background-color: var(--dark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+header nav .left a:hover {
+  color: var(--primary);
+}
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+header nav {
+  padding: 2rem 0;
+}
+header nav .logo {
+  margin-right: 3rem;
+}
+.hero {
+  padding: 2rem 0;
+}
+.hero .left img {
+  width: 400px;
+}
+.hero .Rhero {
+  color: var(--pure);
+  margin-top: -7rem;
+}
+.hero .Rhero h6 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.hero .Rhero h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.hero .Rhero h1 span {
+  color: var(--primary);
+}
+.hero .Rhero p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+footer {
+background: var(--pureDark);
+text-align: center;
+padding: 6rem 0;
+}
+footer .social-ima{
+  margin: 4rem 0;
+ 
+}
+footer .social-ima {
+  padding-left: 1rem;
+  
+}
+footer .social-ima a img{
+  background: var(--pure);
+  margin-right: 1rem;
+  
+}
+footer p{
+  color: var(--liter);
+}
+.about {
+  padding: 6rem 0;
+}
+section .container .Left-con .about-img {
+  height: 450px;
+}
+section .container .Right-con h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+section .container .Right-con h1 span {
+  color: var(--primary);
+}
+section .container .Right-con h4 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+section .container .Right-con p {
+  color: var(--secondary);
+  font-family: "Lato", sans-serif;
+  padding-bottom: 3rem;
+  line-height: 1.9;
+}
+.social-ima a {
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.3rem;
+}
+.social-ima a img:hover {
+  background: var(--primary);
+  border-radius: 50px;
+}
+.social-ima a img {
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.card-img {
+  height: 80px;
+  width: 80px;
+  background: var(--primary);
+  border-radius: 3px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section .cardWraper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+}
+section.services {
+  background: var(--lite);
+  padding: 4rem 0;
+}
+section.services .card {
+  background: var(--pure);
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  padding-top: 4rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+section.services .card:hover {
+  background: var(--pureDark);
+}
+section.services .card:hover p {
+  color: var(--pure);
+  line-height: 2rem;
+  font-family: "Lato", sans-serif;
+}
+section.services .card:hover h2 {
+  color: var(--pure);
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+.section-heading span {
+  color: var(--primary);
+}
+.section-heading {
+  color: var(--pureDark);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 0.5;
+}
+.section-heading + p {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 6rem;
+}
+section.services .card h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+section.services .card p {
+  line-height: 2rem;
+  font-family: "Lato", sans-serif;
+  color: var(--secondary);
+}
+.abc {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--dark);
+  overflow: hidden;
+}
+section.freelancer {
+  text-align: center;
+  padding: 2rem 0;
+  background: linear-gradient(rgba(64, 64, 100, 0.9), rgba(0, 0, 0, 0.9)),
+    url(/img/camera.png);
+  color: var(--pure);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+  padding-bottom: 14rem;
+}
+section.freelancer h1 {
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+  color: var(--primary);
+}
+section.freelancer p {
+  margin-bottom: 4rem;
+  font-family: "Lato", sans-serif;
+}
+section.review .container {
+  text-align: center;
+}
+section.review .container h1 {
+  margin-bottom: 0.5rem;
+  color: var(--pureDark);
+}
+section.review .container h1 span {
+  color: var(--primary);
+}
+section.review .container p {
+  margin-bottom: 1.5rem;
+  font-family: "Lato", sans-serif;
+  color: var(--secondary);
+}
+section.review .container .slider .slide {
+  padding: 0 20rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.review .container .slider .slide img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+section.review .container .slider .slide p {
+  font-family: "Lato", sans-serif;
+  color: var(--secondary);
+}
+section.review .container .slider .slide span {
+  color: var(--pureDark);
+  font-weight: bold;
+}
+section.review .slider-dots .dots {
+  list-style-type: none;
+  display: flex !important;
+  justify-content: center;
+}
+section.review .slider-dots {
+  margin: 2rem;
+}
+section.review .slider-dots button {
+  font-size: 0;
+  width: 8px;
+  height: 5px;
+  margin-right: 0.2rem;
+  border: none;
+  outline: none;
+  background: var(--secondary);
+  border-radius: 50px;
+  cursor: pointer;
+}
+section.review .slider-dots li.slick-active button {
+  background: var(--primary);
+  width: 1rem;
+}
+section.work {
+  background: var(--lite);
+  padding: 4rem;
+}
+section.work .card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+section.work p {
+  margin-bottom: 4rem;
+}
+section.work .card {
+  position: relative;
+  height: 250px;
+}
+section.work .card .overLay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  color: var(--lite);
+  background: #3dced391;
+  opacity: 0;
+  transition: all 0.6s ease;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+section.work .card .overLay a {
+  color: var(--dark);
+  text-decoration: none;
+}
+section.work .card:hover .overLay {
+  opacity: 1;
+}
+
+section.blog .cardwraper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 2rem;
+
+}
+section.blog{
+  background: var(--dark);
+  padding: 4rem 3rem;
+  padding-bottom: 10rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 79% 92% , 0 100% );
+}
+section.blog .cardwraper{
+  margin-bottom: 5rem;
+}
+section.blog .section-heading {
+  color: var(--pure);
+}
+section.blog .cardwraper .card{
+  width: 350px;
+}
+section.blog .cardwraper .card img{
+  height: 100%;
+  width: 100%;
+}
+section.blog .cardwraper .cardContent{
+  background: var(--pure);
+  padding: 2rem 2rem;
+}
+section.blog .cardImg{
+  height: 250px;
+  width: 100%;
+}
+section.blog .cardContent a {
+text-decoration: none;
+color: var(--pureDark);
+font-weight: 600;
+}
+section.blog .cardContent a + p{
+  color: var(--liter);
+  margin: 1rem 0;
+}
+section.blog .cardContent a + p + p{
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+section.contact {
+  padding-top: 4rem;
+}
+section.contact .card{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+section.contact .card h1{
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+section.contact .card h3{
+  font-weight: 500;
+  color: var(--secondary);
+  font-size: 1rem;
+}
+section.contact .op{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+section.contact .op input{
+ border: 1px solid var(--liter);
+ padding: .5rem;
+}
+section.contact .op-2 input{
+  border: 1px solid var(--liter);
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+section.contact .op-2 textarea{
+  padding: .5rem;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  border: 1px solid var(--liter);
+}
+section.contact .op-2{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+section.contact form{
+  text-align: center;
+  margin: 5rem 0;
+}
+section.contact input:focus{
+  outline: none;
+  background: #3dcfd42d;
+}
+section.contact textarea:focus{
+  outline: none;
+  background: #3dcfd42d;
+}
+section.contact .card .img1{
+  height: 40px;
+  width: 26.8px;
+  transition: all .9s ease;
+  
+}
+section.contact .card img{
+  transition: all .9s ease;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* section.contact .card:hover img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.5);
+} */
+section.contact .card:hover .img1{
+  background: #3dcfd3;
+  transform: scale(1.5);
+  border-radius: 5px;
+}
+section.contact .card .img2{
+  height: 30px;
+  width: 40px;
+  transition: all .9s ease;
+}
+section.contact .card:hover .img2{
+  background: #3dcfd3;
+  transform: scale(1.5);
+
+}
+section.contact .card .img3{
+  height: 40px;
+  width: 40px;
+  transition: all .9s ease;
+  clip-path: polygon(0% 0%, 027% 017%, 50% 0%, 073% 017%, 100% 0%, 100% 083%, 073% 0100%, 50% 083%, 027% 100%, 0% 083%);
+}
+section.contact .card:hover .img3{
+  background: #3dcfd3;
+  transform: scale(1.5);
+  clip-path: polygon(0% 0%, 027% 017%, 50% 0%, 073% 017%, 100% 0%, 100% 083%, 073% 0100%, 50% 083%, 027% 100%, 0% 083%);
+  
+}
+
+
+
+
+@media  (max-width: 1024px) {
+  #main-nav {
+    display: none;
+  }
+  .hamberger {
+    display: block;
+  }
+  .hero .left img {
+    width: 290px;
+  }
+  .hero .Rhero {
+    margin-top: -3rem;
+  }
+
+  .hero .Rhero h1 {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  .hero .Rhero p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    width: 20.7rem;
+    padding-left: 7px;
+  }
+  section .container .Left-con .about-img {
+    height: 355px;
+  }
+  .Right-con {
+    height: 24rem;
+    margin-left: 33px;
+    padding-top: 1rem;
+  }
+  section .container .Right-con p {
+    color: var(--secondary);
+    font-family: "Lato", sans-serif;
+    padding-bottom: 2rem;
+    line-height: 1.9;
+    width: 19.7rem;
+  }
+  section.services .cardWraper {
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
+  section.services .card {
+    background: var(--pure);
+    padding: 1rem 1rem;
+    text-align: center;
+    position: relative;
+    padding-top: 2.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    height: 15rem;
+  }
+  .div-style {
+    overflow: hidden;
+    height: 70px;
+  }
+  section.services .card:hover {
+    background: var(--pureDark);
+    height: 20rem;
+    width: 60%;
+    position: absolute;
+    z-index: 101;
+    transform: translate(-30px, -90px);
+  }
+  .div-style:hover {
+    overflow-y: auto;
+    height: 18rem;
+  }
+  section.services .card p:hover {
+    line-height: 2rem;
+    font-family: "Lato", sans-serif;
+    color: var(--secondary);
+    font-size: 1.2rem;
+  }
+  section.work .cardWraper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.contact .container {
+    margin: 0px -70px;
+  }
+  section.work .container {
+    margin: 0px -70px;
+  }
+  section.services .container {
+    margin: 0px -70px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .hero .left img {
+    width: 250px;
+    margin-left: 157px;
+    padding-bottom: 1.9rem;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero .Rhero {
+    position: absolute;
+    bottom: 0px;
+    left: 0PX;
+    right: 0;
+    padding: 33px 33px;
+    width: 100% ;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.6 ),rgba(0,0,0,0));
+  }
+
+  
+  .hero .Rhero h6 {
+    color: var(--pure);
+  }
+  .hero .Rhero h1 {
+    color: var(--primary);
+  }
+  .hero .Rhero h1 span {
+    color: var(--pure);
+  }
+
+  header{
+    clip-path: polygon(0 0, 100% 0, 124% 100%, 76% 87%, 0 95%);
+  }
+  section.about .container{
+    flex-direction: column;
+  }
+  section.contact .cardWraper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.work .cardWraper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.services .cardWraper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.services .card{
+    padding: 1rem 1rem;
+    padding-top: 2.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+   
+  }
+  section.services .card:hover {
+    height: 20rem;
+    width: 150%;
+  }
+  .section-heading{
+    line-height: 1.5;
+  }
+}
