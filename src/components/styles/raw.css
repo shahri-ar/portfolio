@@ -153,11 +153,11 @@ section .cardWraper {
   grid-column-gap: 2rem;
   grid-row-gap: 4rem;
 }
-section.services {
+section.skills {
   background: var(--lite);
   padding: 4rem 0;
 }
-section.services .card {
+section.skills .card {
   background: var(--pure);
   padding: 3rem 2rem;
   text-align: center;
@@ -166,15 +166,15 @@ section.services .card {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-section.services .card:hover {
+section.skills .card:hover {
   background: var(--pureDark);
 }
-section.services .card:hover p {
+section.skills .card:hover p {
   color: var(--pure);
   line-height: 2rem;
   font-family: "Lato", sans-serif;
 }
-section.services .card:hover h2 {
+section.skills .card:hover h2 {
   color: var(--pure);
   font-size: 1.2rem;
   font-weight: 100;
@@ -188,18 +188,20 @@ section.services .card:hover h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   line-height: 0.5;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .section-heading + p {
   color: var(--secondary);
   text-align: center;
   margin-bottom: 6rem;
 }
-section.services .card h2 {
+section.skills .card h2 {
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
-section.services .card p {
+section.skills .card p {
   line-height: 2rem;
   font-family: "Lato", sans-serif;
   color: var(--secondary);
@@ -211,7 +213,7 @@ section.services .card p {
   background: var(--dark);
   overflow: hidden;
 }
-section.freelancer {
+section.resume {
   text-align: center;
   padding: 2rem 0;
   background: linear-gradient(rgba(64, 64, 100, 0.9), rgba(0, 0, 0, 0.9)),
@@ -220,12 +222,12 @@ section.freelancer {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
   padding-bottom: 14rem;
 }
-section.freelancer h1 {
+section.resume h1 {
   margin-bottom: 1.2rem;
   font-size: 2rem;
   color: var(--primary);
 }
-section.freelancer p {
+section.resume p {
   margin-bottom: 4rem;
   font-family: "Lato", sans-serif;
 }
@@ -291,7 +293,7 @@ section.review .slider-dots li.slick-active button {
 }
 section.work {
   background: var(--lite);
-  padding: 4rem;
+  padding: 4rem 0rem;
 }
 section.work .card img {
   height: 100%;
@@ -438,11 +440,11 @@ section.contact textarea:focus{
 section.contact .card .img1{
   height: 40px;
   width: 26.8px;
-  transition: all .9s ease;
+  transition: all .3s ease;
   
 }
 section.contact .card img{
-  transition: all .9s ease;
+  transition: all .3s ease;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -461,7 +463,7 @@ section.contact .card:hover .img1{
 section.contact .card .img2{
   height: 30px;
   width: 40px;
-  transition: all .9s ease;
+  transition: all .3s ease;
 }
 section.contact .card:hover .img2{
   background: #3dcfd3;
@@ -471,7 +473,7 @@ section.contact .card:hover .img2{
 section.contact .card .img3{
   height: 40px;
   width: 40px;
-  transition: all .9s ease;
+  transition: all .3s ease;
   clip-path: polygon(0% 0%, 027% 017%, 50% 0%, 073% 017%, 100% 0%, 100% 083%, 073% 0100%, 50% 083%, 027% 100%, 0% 083%);
 }
 section.contact .card:hover .img3{
@@ -523,11 +525,11 @@ section.contact .card:hover .img3{
     line-height: 1.9;
     width: 19.7rem;
   }
-  section.services .cardWraper {
+  section.skills .cardWraper {
     grid-template-columns: repeat(2, 1fr);
     position: relative;
   }
-  section.services .card {
+  section.skills .card {
     background: var(--pure);
     padding: 1rem 1rem;
     text-align: center;
@@ -541,7 +543,7 @@ section.contact .card:hover .img3{
     overflow: hidden;
     height: 70px;
   }
-  section.services .card:hover {
+  section.skills .card:hover {
     background: var(--pureDark);
     height: 20rem;
     width: 60%;
@@ -553,7 +555,7 @@ section.contact .card:hover .img3{
     overflow-y: auto;
     height: 18rem;
   }
-  section.services .card p:hover {
+  section.skills .card p:hover {
     line-height: 2rem;
     font-family: "Lato", sans-serif;
     color: var(--secondary);
@@ -568,7 +570,7 @@ section.contact .card:hover .img3{
   section.work .container {
     margin: 0px -70px;
   }
-  section.services .container {
+  section.skills .container {
     margin: 0px -70px;
   }
 
@@ -585,7 +587,7 @@ section.contact .card:hover .img3{
   }
   .hero .Rhero {
     position: absolute;
-    bottom: 0px;
+    bottom: 50px;
     left: 0PX;
     right: 0;
     padding: 33px 33px;
@@ -616,21 +618,25 @@ section.contact .card:hover .img3{
   section.work .cardWraper {
     grid-template-columns: repeat(1, 1fr);
   }
-  section.services .cardWraper {
+  section.skills .cardWraper {
     grid-template-columns: repeat(1, 1fr);
   }
-  section.services .card{
+  section.skills .card{
     padding: 1rem 1rem;
     padding-top: 2.5rem;
     border-radius: 5px;
     transition: all 0.3s ease;
    
   }
-  section.services .card:hover {
+  section.skills .card:hover {
     height: 20rem;
     width: 150%;
   }
   .section-heading{
     line-height: 1.5;
+  }
+  .op{
+    display: flex !important;
+    flex-direction: column;
   }
 }
