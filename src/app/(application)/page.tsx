@@ -1,4 +1,4 @@
-import { Hero, About,  } from "@/components/platfrom";
+import { Hero, About, Skills, Resume, Work, Contact,  } from "@/components/platfrom";
 
 import  "@/components/styles/raw.css"
 
@@ -7,6 +7,10 @@ import  "@/components/styles/raw.css"
         <>
         <Hero/>
         <About/>
+        <Skills/>
+        <Resume/>
+        <Work/>
+        <Contact/>
         </>
     )
 }
