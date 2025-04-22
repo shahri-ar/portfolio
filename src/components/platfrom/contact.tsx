@@ -1,5 +1,6 @@
 import { contactData } from "@/utils/constants/dynamic.data.component";
 import Form from 'next/form';
+import Image from "next/image";
 
 export function Contact() {
 
@@ -13,7 +14,13 @@ export function Contact() {
             contactData.map((data, index) => (
               <div key={index} className="card flex flex-col justify-between">
                 <div className={data.clsName}>
-                  <img src={data.img} alt={data.alt} />
+                  <Image
+                    src={data.img} 
+                    alt={data.alt}
+                    height={100}
+                    width={100}
+                  />
+
                 </div>
                 <div>
                   <h1>{data.title}</h1>
@@ -22,18 +29,6 @@ export function Contact() {
               </div>
             ))}
         </div>
-
-        {/* <form action="">
-        <div className="op">
-          <input type="text" placeholder="Your name*"/>
-          <input type="email" placeholder="Your Email*"/>
-        </div>
-        <div className="op-2">
-          <input type="text" placeholder="Your Subject..."/>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Your message.."></textarea>
-        </div>
-        <button className="btn btn-primary ">SEND MESSAGE</button>
-      </form> */}
 
         <Form action=''>
           <div className="op">
