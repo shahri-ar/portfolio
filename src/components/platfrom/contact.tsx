@@ -1,8 +1,25 @@
+"use client"
 import { contactData } from "@/utils/constants/dynamic.data.component";
 import Form from 'next/form';
 import Image from "next/image";
+import { sendMessageData } from "../common/actions";
+import { useActionState, useEffect } from "react";
+import { toast } from "sonner";
 
 export function Contact() {
+
+    const [formState, formAction, isPending] = useActionState(
+      sendMessageData,
+      null
+    );
+
+    useEffect (() => {
+      if (formState?.success) {
+        toast.success(formState?.message);
+      } else if (formState?.success === false) {
+        toast.error(formState?.message);
+      }
+    },[formState?.success])
 
   return (
     <section id="contact" className="contact place-items-center">
@@ -30,7 +47,7 @@ export function Contact() {
             ))}
         </div>
 
-        <Form action=''>
+        <Form action={formAction}>
           <div className="op">
             <input type="text" placeholder="Your name*" name="username" required />
             <input type="email" placeholder="Your Email*" name="email" required />
@@ -39,7 +56,7 @@ export function Contact() {
             <input type="text" placeholder="Your Subject..." name="subject" />
             <textarea name="message" placeholder="Your message.."></textarea>
           </div>
-          <button type="submit" className="btn btn-primary ">SEND MESSAGE</button>
+          <button type="submit" className="btn btn-primary ">{isPending ? "Sending..." : "SEND MESSAGE"}</button>
         </Form>
 
       </div>
