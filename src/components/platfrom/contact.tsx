@@ -2,7 +2,7 @@
 import { contactData } from "@/utils/constants/dynamic.data.component";
 import Form from 'next/form';
 import Image from "next/image";
-import { sendMessageData } from "../common/actions";
+import { sendMessageData } from "../actions";
 import { useActionState, useEffect } from "react";
 import { toast } from "sonner";
 
