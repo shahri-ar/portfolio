@@ -1,4 +1,4 @@
-import { aboutContacts } from "@/utils/constants/dynamic.data.component";
+import { webContacts } from "@/utils/constants/dynamic.data.component";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -29,7 +29,7 @@ export function About() {
                         delectus rerum voluptatem nam facere tempore?
                     </p>
                     <div className="social-ima flex">
-                        {aboutContacts.map((contct, index) => (
+                        {webContacts.map((contct, index) => (
                             <Link key={index} href={contct.link}>
                                 <Image
                                     src={contct.image}

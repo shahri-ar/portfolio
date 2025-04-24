@@ -1,7 +1,16 @@
+"use client"
+
 import Image from "next/image";
+import { downloadFile } from "../common/downloadCv";
+import Button from "../common/button.component";
 
 
 export function Hero() {
+
+    const handleDownload = () => {
+        downloadFile();
+    };
+
     return (
         <section className=" home-hero hero">
             <div id="home" className="container mx-auto flex center justify">
@@ -24,7 +33,11 @@ export function Hero() {
                         natus inventore atque.
                     </p>
                     <div>
-                        <button className="btn btn-secondary">DOWNLOAD CV</button>
+                        <Button
+                            event={handleDownload}
+                            className={"btn btn-secondary"}
+                            text={"DOWNLOAD CV"}
+                        />
                     </div>
                 </div>
             </div>
