@@ -5,6 +5,7 @@ import { downloadFile } from "../common/downloadCv";
 import Button from "../common/button.component";
 
 
+
 export function Hero() {
 
     const handleDownload = () => {
