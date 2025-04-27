@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "../common/button.component";
 import { navdata } from "@/utils/constants/dynamic.data.component";
+import Toggol from "./toggol-nav";
 
 export function Navbar() {
 
@@ -18,7 +19,7 @@ export function Navbar() {
 
             if (currentScroll > lastScrollTop) {
                 // Scroll Down
-                setNavbarStyle("top-[-80px]"); // Hide the navbar
+                setNavbarStyle("top-[-85px]"); // Hide the navbar
             } else {
                 // Scroll Up
                 setNavbarStyle("top-0"); // Show the navbar
@@ -49,7 +50,7 @@ export function Navbar() {
                         <div className="text-white flex gap-5 ">
                             {
                                 navdata.map((data,index)=>(
-                                    <Link key={index} href={data.link}>{data.item}</Link>
+                                    <Link className="link" key={index} href={data.link}>{data.item}</Link>
                                 ))
                             }
                         </div>
@@ -62,6 +63,7 @@ export function Navbar() {
                     </div>
                 </div>
             </nav>
+            <Toggol/>
         </section>
     )
 }

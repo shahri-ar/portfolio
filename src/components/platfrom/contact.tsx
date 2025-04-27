@@ -24,7 +24,7 @@ export function Contact() {
   return (
     <section id="contact" className="contact place-items-center">
       <div className="container">
-        <h1 className="section-heading">Contact<span> Us</span></h1>
+        <h1 className="section-heading">Contact<span> Me</span></h1>
         <p>We provide high standar clean website for your business solutions</p>
         <div className="cardWraper">
           {
@@ -54,7 +54,7 @@ export function Contact() {
           </div>
           <div className="op-2">
             <input type="text" placeholder="Your Subject..." name="subject" />
-            <textarea name="message" placeholder="Your message.."></textarea>
+            <textarea name="message" placeholder="Send your message to my discord channel.."></textarea>
           </div>
           <button type="submit" className="btn btn-primary ">{isPending ? "Sending..." : "SEND MESSAGE"}</button>
         </Form>

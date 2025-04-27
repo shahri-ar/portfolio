@@ -1,10 +1,10 @@
 import { workCards } from "@/utils/constants/dynamic.data.component"
-import { CircleArrowRight } from "lucide-react"
+import { MousePointerClick, CircleArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
 export function Work() {
-
+    
     return (
         <section id="work" className="work place-items-center">
             <div className="container">
@@ -21,10 +21,15 @@ export function Work() {
                                         <div className="material">
                                             <span>Material Used</span>
                                             <ul>
-                                                <li><CircleArrowRight className="h-4" />React,next</li>
-                                                <li><CircleArrowRight className="h-4"/>React</li>
-                                                <li><CircleArrowRight className="h-4" />React</li>
+                                                {
+                                                    card.lists.map((list,index)=>(
+                                                    <li key={index}><CircleArrowRight className="h-4" />{list.list}</li>
+                                                    ))
+                                                }
                                             </ul>
+                                        </div>
+                                        <div className="aro-circle">
+                                          view  <MousePointerClick className="h-4"/>
                                         </div>
                                     </div>
                                     <Image

@@ -83,6 +83,7 @@ export interface WorkCards {
     linkText: string;
     img: string;
     alt: string;
+    lists : Array<{list:string}>
 }
 
 export const workCards: WorkCards[] = [
@@ -91,36 +92,66 @@ export const workCards: WorkCards[] = [
         linkText: "Web Development",
         img: "/img/ph-1.png",
         alt: "",
+        lists : [
+            {list:""},
+            {list:""},
+            {list:""},
+        ]
     },
     {
         link: "https://my-tube-jet-kappa.vercel.app",
         linkText: "Demo Youtube",
         img: "/img/work image/demo_youtube.jpg",
         alt: "",
+        lists : [
+            {list:""},
+            {list:""},
+            {list:""},
+        ]
+    },
+    {
+        link: "https://user-list-coral.vercel.app",
+        linkText: "search bar userlist",
+        img: "/img/work image/search-user-list.jpg",
+        alt: "",
+        lists : [
+            {list:""},
+            {list:""},
+            {list:""},
+        ]
     },
     {
         link: "",
         linkText: "Web Development",
         img: "/img/ph-1.png",
         alt: "",
+        lists : [
+            {list:""},
+            {list:""},
+            {list:""},
+        ]
     },
     {
         link: "",
         linkText: "Web Development",
         img: "/img/ph-1.png",
         alt: "",
+        lists : [
+            {list:""},
+            {list:""},
+            {list:""},
+        ]
     },
     {
         link: "",
         linkText: "Web Development",
         img: "/img/ph-1.png",
         alt: "",
-    },
-    {
-        link: "",
-        linkText: "Web Development",
-        img: "/img/ph-1.png",
-        alt: "",
+        lists : [
+            {list:""},
+            {list:""},
+            {list:""},
+        ]
     },
 ]
 
@@ -171,7 +202,7 @@ export const navdata : Navdata [] = [
         item: "About"
     }, {
         link: "#skills",
-        item: "Experience"
+        item: "Skills"
     },
     {
         link: "#resume",

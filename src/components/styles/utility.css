@@ -41,3 +41,15 @@
 .justify-center {
   justify-content: center;
 }
+
+.btnc{
+  padding: .5rem 1rem;
+  margin-left: .7rem;
+  font-size: .7rem;  
+  font-weight: 600;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}

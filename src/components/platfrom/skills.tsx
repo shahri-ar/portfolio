@@ -25,7 +25,9 @@ export function Skills() {
                                     />
                                 </div>
                                 <h2>{skill.Name}</h2>
+                                <div className="para">
                                 <p>{skill.Dsp}</p>
+                                </div>
                             </div>
                         ))
                     }
