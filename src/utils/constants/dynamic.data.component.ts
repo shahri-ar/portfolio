@@ -88,14 +88,14 @@ export interface WorkCards {
 
 export const workCards: WorkCards[] = [
     {
-        link: "",
-        linkText: "Web Development",
-        img: "/img/ph-1.png",
+        link: "https://game-provider-blond.vercel.app",
+        linkText: "Game Provider",
+        img: "/img/work image/igaming.jpg",
         alt: "",
         lists : [
-            {list:""},
-            {list:""},
-            {list:""},
+            {list:"Next.js, React"},
+            {list:"typescript"},
+            {list:"tailwind, shadcn ui"},
         ]
     },
     {
@@ -104,9 +104,9 @@ export const workCards: WorkCards[] = [
         img: "/img/work image/demo_youtube.jpg",
         alt: "",
         lists : [
-            {list:""},
-            {list:""},
-            {list:""},
+            {list:"React, JavaScript"},
+            {list:"Bootstrap"},
+            {list:"Axios"},
         ]
     },
     {
@@ -115,20 +115,20 @@ export const workCards: WorkCards[] = [
         img: "/img/work image/search-user-list.jpg",
         alt: "",
         lists : [
-            {list:""},
-            {list:""},
-            {list:""},
+            {list:"React, JavaScript"},
+            {list:"Bootstrap, Formic"},
+            {list:"Axios"},
         ]
     },
     {
-        link: "",
-        linkText: "Web Development",
-        img: "/img/ph-1.png",
+        link: "https://click-counter-sable.vercel.app",
+        linkText: "Counter App",
+        img: "/img/work image/click-counter.jpg",
         alt: "",
         lists : [
-            {list:""},
-            {list:""},
-            {list:""},
+            {list:"React"},
+            {list:"JavaScript"},
+            {list:"Bootstrap"},
         ]
     },
     {
