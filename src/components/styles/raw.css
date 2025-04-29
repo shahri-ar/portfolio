@@ -679,7 +679,7 @@ section.contact .card:hover .img3{
   }
   .hero .Rhero {
     position: absolute;
-    bottom: 0px;
+    bottom: 10%;
     left: 0PX;
     right: 0;
     padding: 33px 33px;
