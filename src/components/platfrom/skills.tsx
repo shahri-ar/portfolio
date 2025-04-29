@@ -9,8 +9,7 @@ export function Skills() {
             <div className="container">
                 <h1 className="section-heading"><span>My </span>skills</h1>
                 <p>
-                    there is something written but i can't read what is it so i am writing
-                    this on my own, hope you dont mind
+                A showcase of the technical skills and tools I use to build responsive, high-quality, and user-focused web applications.
                 </p>
                 <div className="cardWraper">
                     {

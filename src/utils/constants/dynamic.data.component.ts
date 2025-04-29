@@ -11,23 +11,18 @@ export const webContacts: WebContacts[] = [
         imgalt: ""
     },
     {
-        link: "https://www.facebook.com/",
+        link: "https://github.com/shahri-ar",
+        image: "/img/github-2-240.png",
+        imgalt: ""
+    },
+    {
+        link: "https://www.linkedin.com/in/shahriar-arafat-8650a9190/",
+        image: "/img/linkedin-2-240.png",
+        imgalt: ""
+    },
+    {
+        link: "https://www.facebook.com/shahriar.arafat.sany",
         image: "/img/facebook.svg",
-        imgalt: ""
-    },
-    {
-        link: "",
-        image: "/img/twitter.svg",
-        imgalt: ""
-    },
-    {
-        link: "",
-        image: "/img/pinterest.svg",
-        imgalt: ""
-    },
-    {
-        link: "",
-        image: "/img/instagram.svg",
         imgalt: ""
     },
 ]
@@ -41,40 +36,40 @@ export interface CardSkills {
 
 export const cardSkills: CardSkills[] = [
     {
-        img: "/img/brush.svg",
+        img: "/img/skills/code.svg",
         alt: "",
-        Name: "Graphs design",
-        Dsp: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor,soluta? Nisi magni neque accusamus natus totam ullam numquamearum eos delectus"
+        Name: "Logic & Fundamentals",
+        Dsp: "Strong understanding of JavaScript and TypeScript fundamentals, with advanced C++ expertise. Skilled at solving complex problems efficiently, using logical thinking and deep programming knowledge."
     },
     {
-        img: "/img/code.svg",
+        img: "/img/skills/iconmonstr-book-21-240.png",
         alt: "",
-        Name: "Graphs design",
-        Dsp: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor,soluta? Nisi magni neque accusamus natus totam ullam numquamearum eos delectus"
+        Name: "Libraries",
+        Dsp: "Proficient in building powerful user interfaces using React, Next.js, and Vue.js, focusing on performance, scalability, and modern development best practices."
     },
     {
-        img: "/img/media.svg",
+        img: "/img/skills/framework-5-32.png",
         alt: "",
-        Name: "Graphs design",
-        Dsp: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor,soluta? Nisi magni neque accusamus natus totam ullam numquamearum eos delectus"
+        Name: "Framework & CSS",
+        Dsp: "Expert in pure raw CSS, Tailwind CSS, and Bootstrap, creating elegant, responsive designs with pixel-perfect attention to detail and clean, scalable code architecture."
     },
     {
-        img: "/img/pc.svg",
+        img: "/img/skills/tools-27-32.png",
         alt: "",
-        Name: "Graphs design",
-        Dsp: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor,soluta? Nisi magni neque accusamus natus totam ullam numquamearum eos delectus"
+        Name: "Tools",
+        Dsp: "Experienced with Babel, Axios, ShadCN UI, Lucide, Formik, and Swiper, mastering essential tools to streamline development, enhance workflows, and optimize application performance."
     },
     {
-        img: "/img/media.svg",
+        img: "/img/skills/structure-15-32.png",
         alt: "",
-        Name: "Graphs design",
-        Dsp: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor,soluta? Nisi magni neque accusamus natus totam ullam numquamearum eos delectus"
+        Name: "Structure",
+        Dsp: "Hands-on experience in crafting structured, maintainable applications using HTML, XML, and JSX, ensuring clean codebases and efficient UI component architecture for modern projects."
     },
     {
-        img: "/img/phone.svg",
+        img: "/img/skills/responsive-design-3-32.png",
         alt: "",
-        Name: "Graphs design",
-        Dsp: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor,soluta? Nisi magni neque accusamus natus totam ullam numquamearum eos delectus"
+        Name: "Dynamic & Responsive Design",
+        Dsp: "Specialized in building dynamic, interactive, and fully responsive user interfaces that adapt seamlessly across devices, enhancing user engagement and delivering a smooth experience."
     },
 ]
 

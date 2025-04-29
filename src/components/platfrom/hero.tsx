@@ -28,10 +28,7 @@ export function Hero() {
                     <h6>Shahriar Arafat</h6>
                     <h1>I am a Creative <span>Designer</span></h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
-                        praesentium expedita cum! Soluta dolor officia eum iure, modi
-                        dolorem! In eum quo doloribus quibusdam error excepturi voluptatum
-                        natus inventore atque.
+                    This portfolio is designed keeping focus on simplicity and visual impact. The goal was to showcase my projects while demonstrating strong fundamentals. Every element is crafted to reflect clean code practices, responsive design, and a user-friendly experience. This project not only highlights my frontend skills but also serves as a live testament to my attention to detail, creativity, and growth as a developer.
                     </p>
                     <div>
                         <Button

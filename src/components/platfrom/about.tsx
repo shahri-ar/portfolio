@@ -23,10 +23,7 @@ export function About() {
                     <h1>About <span>Me</span></h1>
                     <h4>Hello! I'm Shahriar Arafat</h4>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
-                        officiis porro enim distinctio! Ab reiciendis porro dolorem
-                        exercitationem, eligendi obcaecati neque quis explicabo soluta
-                        delectus rerum voluptatem nam facere tempore?
+                    I am highly motivated and detail-oriented, with a passion for solving complex problems and building efficient solutions. I thrive in collaborative environments, take initiative when needed, and stay composed and productive under pressure.
                     </p>
                     <div className="social-ima flex">
                         {webContacts.map((contct, index) => (

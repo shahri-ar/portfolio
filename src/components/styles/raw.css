@@ -156,7 +156,7 @@ section.skills {
 }
 section.skills .card {
   background: var(--pure);
-  padding: 3rem 2rem;
+  padding:1rem 1rem;
   text-align: center;
   position: relative;
   padding-top: 4rem;
@@ -202,6 +202,7 @@ section.skills .card p {
   line-height: 2rem;
   font-family: "Lato", sans-serif;
   color: var(--secondary);
+  margin-bottom: 1rem;
 }
 .abc {
   position: sticky;
@@ -635,7 +636,9 @@ section.contact .card:hover .img3{
     padding-top: 2.5rem;
     border-radius: 5px;
     transition: all 0.3s ease;
-    height: 15rem;
+  }
+  section.skills .card h2{
+    margin-top: 1rem;
   }
   .div-style {
     overflow: hidden;
@@ -644,18 +647,12 @@ section.contact .card:hover .img3{
   section.skills .card:hover {
     background: var(--pureDark);
     width: 100%;
-    z-index: 101;
   }
   .div-style:hover {
     overflow-y: auto;
     height: 18rem;
   }
-  section.skills .card p:hover {
-    line-height: 2rem;
-    font-family: "Lato", sans-serif;
-    color: var(--secondary);
-    font-size: 1.2rem;
-  }
+
   section.work .cardWraper {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -682,27 +679,32 @@ section.contact .card:hover .img3{
   }
   .hero .Rhero {
     position: absolute;
-    bottom: 70px;
+    bottom: 0px;
     left: 0PX;
     right: 0;
     padding: 33px 33px;
     width: 100% ;
-    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.6 ),rgba(0,0,0,0));
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.9 ),rgba(0,0,0,0));
   }
 
   
   .hero .Rhero h6 {
     color: var(--pure);
+    
   }
   .hero .Rhero h1 {
     color: var(--primary);
+    
   }
   .hero .Rhero h1 span {
     color: var(--pure);
   }
-
-  header{
-    clip-path: polygon(0 0, 100% 0, 124% 100%, 76% 87%, 0 95%);
+  .hero .Rhero p{
+    font-size: .9rem;
+    color: var(--liter);
+  }
+  .home-hero.hero{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   section.about .container{
     flex-direction: column;
